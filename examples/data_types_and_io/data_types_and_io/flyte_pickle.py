@@ -21,7 +21,7 @@
 # Pickle can only be used to send objects between the exact same version of Python,
 # and we strongly recommend to use python type that flyte support or register a custom transformer
 #
-# This example shows how users can custom object without register a transformer.
+# This example shows how users can use custom object without register a transformer.
 # %%
 from flytekit import task, workflow
 
@@ -62,7 +62,6 @@ if __name__ == "__main__":
     welcome(name="Foo")
 
 
-from typing import List
 
 # %% [markdown]
 # By default, if the list subtype is unrecognized, a single pickle file is generated.
@@ -71,6 +70,7 @@ from typing import List
 # Example below shows how users can set batch size.
 #
 # %%
+from typing import List
 from flytekit.types.pickle.pickle import BatchSize
 from typing_extensions import Annotated
 

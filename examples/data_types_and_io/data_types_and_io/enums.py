@@ -9,8 +9,7 @@
 # achieved using Enum types in programming languages.
 #
 # Since version 0.15.0, Flyte supports Enum Types with string values. You can create a python Enum type and pass it to
-# a task or return from a task. Flyte will automatically convert this to and limit the inputs etc to a finite set of
-# values.
+# a task or return from a task. Flyte will handle the conversion automatically, ensuring that inputs and outputs are restricted to a finite set of values."
 #
 # UX: flytectl will allow only the finite set of values to be acceptable and (in progress) UI will provide a drop-down for
 # the values.
